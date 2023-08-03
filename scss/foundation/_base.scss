@@ -1,0 +1,61 @@
+@use "./color";
+@use "./variable";
+
+/*============================
+リセットCSS
+============================*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: variable.$font-family-base;
+	line-height: 1;
+	background: color.$c-gray;
+	color: color.$text-base;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: middle;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

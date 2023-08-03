@@ -1,0 +1,24 @@
+// インナー幅(MD)
+$inner-width-md: 1200px;
+
+// インナー幅(SM)
+$inner-width-sm: 343px;
+
+// ホバー時のtransitionの秒数
+$hover-transition: 0.5s;
+
+// アニメーション時のtransitionの秒数
+$anime-transition: 0.3s;
+
+// opacityに使用
+$opacity-06: 0.6;
+
+// box-shadowに使用
+$box-shadow01: 0 5px 12px rgba(62, 62, 62, 0.2);
+$box-shadow02: 0 0 10px rgba(0, 0, 0, 0.16);
+$box-shadow-btn: 0 3px 5px rgba(62, 62, 62, 0.2);
+
+// font-family
+$font-family-base: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
+	"ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$font-family-english: "Montserrat", sans-serif;

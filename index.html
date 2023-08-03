@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sample Corp.</title>
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		<!-- Swiper.css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"
+			integrity="sha512-N2IsWuKsBYYiHNYdaEuK4eaRJ0onfUG+cdZilndYaMEhUGQq/McsFU75q3N+jbJUNXm6O+K52DRrK+bSpBGj0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Original CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<button type="button" class="l-header__hamburger-button js-hamburger">
+			<span class="l-header__hamburger-icon"></span>
+		</button>
+
+		<div class="l-header__hamburger" role="banner">
+			<nav class="l-header__hamburger-nav" role="navigation">
+				<ul class="l-header__hamburger-menu">
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#news">News</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#service">Service</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#results">Results</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#price">Price</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#comments">Comments</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#faq">FAQs</a>
+					</li>
+					<li class="l-header__hamburger-item">
+						<a class="l-header__hamburger-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="l-header__hamburger-overlay js-hamburger"></div>
+		<!-- ハンバーガーボタン -->
+
+		<div class="l-wrapper">
+			<header class="l-header" id="top" role="banner">
+				<div class="l-header__inner">
+					<h1 class="l-header__logo">
+						<a class="l-header__logo-link" href="/">Sample Corp.</a>
+					</h1>
+					<nav class="l-header__nav" role="navigation">
+						<ul class="l-header__nav-list">
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#news">News</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#service">Service</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#results">Results</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#price">Price</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#comments">Comments</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#faq">FAQs</a>
+							</li>
+							<li class="l-header__nav-item">
+								<a class="l-header__nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!-- /.l-header -->
+
+			<main class="l-main">
+				<div class="p-index-hero">
+					<div class="p-index-hero__inner">
+						<div class="p-index-hero__message">
+							<p class="p-index-hero__message-title">
+								詩が生れて、画が出来る。<br />とかくに人の世は住みにくい。
+							</p>
+							<p class="p-index-hero__message-text">
+								どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+							</p>
+							<div class="p-index-hero__footer">
+								<a href="#" class="p-index-hero__cta-button"
+									>お問い合わせしてみる</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.p-index-hero -->
+
+				<section class="p-index-news" id="news">
+					<div class="p-index-news__inner">
+						<div class="p-index-news__content">
+							<div class="p-index-news__header">
+								<h2 class="p-index-news__title">News</h2>
+							</div>
+							<div class="p-index-news__list">
+								<article class="p-index-news__item">
+									<a href="#" class="p-index-news__item-link">
+										<div class="p-index-news__item-header">
+											<p class="p-index-news__item-date">
+												<time datetime="2019-02-01">2019-02-01</time>
+											</p>
+											<h3 class="p-index-news__item-title">テキスト</h3>
+										</div>
+										<div class="p-index-news__item-body">
+											<p class="p-index-news__item-text">
+												ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース
+											</p>
+										</div>
+									</a>
+								</article>
+								<article class="p-index-news__item">
+									<a href="#" class="p-index-news__item-link">
+										<div class="p-index-news__item-header">
+											<p class="p-index-news__item-date">
+												<time datetime="2019-02-01">2019-02-01</time>
+											</p>
+											<h3 class="p-index-news__item-title">テキスト</h3>
+										</div>
+										<div class="p-index-news__item-body">
+											<p class="p-index-news__item-text">
+												ニュースニュースニュースニュースニュースニュースニュース
+											</p>
+										</div>
+									</a>
+								</article>
+								<article class="p-index-news__item">
+									<a href="#" class="p-index-news__item-link">
+										<div class="p-index-news__item-header">
+											<p class="p-index-news__item-date">
+												<time datetime="2019-02-01">2019-02-01</time>
+											</p>
+											<h3 class="p-index-news__item-title">テキスト</h3>
+										</div>
+										<div class="p-index-news__item-body">
+											<p class="p-index-news__item-text">
+												ニュースニュースニュースニュースニュースニュースニュース
+											</p>
+										</div>
+									</a>
+								</article>
+							</div>
+							<div class="p-index-news__footer">
+								<a href="#" class="p-index-news__link">MORE</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-news -->
+
+				<section class="p-index-service" id="service">
+					<div class="p-index-service__inner">
+						<h2 class="p-index-service__title">Service</h2>
+						<div class="p-index-service__list">
+							<div class="p-index-service__item">
+								<div class="p-index-service__item-picture">
+									<img src="./img/service1.svg" alt="Web Design" />
+								</div>
+								<p class="p-index-service__item-title">WEB<br />DESIGN</p>
+								<p class="p-index-service__item-text">
+									どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+								</p>
+							</div>
+							<div class="p-index-service__item">
+								<div class="p-index-service__item-picture">
+									<img src="./img/service2.svg" alt="Web Coding" />
+								</div>
+								<p class="p-index-service__item-title">WEB<br />CODING</p>
+								<p class="p-index-service__item-text">
+									どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+								</p>
+							</div>
+							<div class="p-index-service__item">
+								<div class="p-index-service__item-picture">
+									<img src="./img/service3.svg" alt="Web Customize" />
+								</div>
+								<p class="p-index-service__item-title">CMS<br />CUSTOMIZE</p>
+								<p class="p-index-service__item-text">
+									どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-service -->
+
+				<section class="p-index-results" id="results">
+					<div class="p-index-results__inner">
+						<h2 class="p-index-results__title">Results</h2>
+						<div class="swiper-parent">
+							<div class="swiper">
+								<div class="p-index-results__list swiper-wrapper">
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+									<div class="p-index-results__item swiper-slide">
+										<div class="p-index-results__item-header">
+											<div class="p-index-results__item-picture">
+												<img src="./img/slide1.png" alt="" />
+											</div>
+										</div>
+										<div class="p-index-results__item-body">
+											<p class="p-index-results__item-title">
+												とかくに人の世は住みにくい。
+											</p>
+											<p class="p-index-results__item-text">
+												どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="p-index-results__footer">
+							<a href="#" class="p-index-results__link">VIEW ALL</a>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-results -->
+
+				<section class="p-index-price" id="price">
+					<div class="p-index-price__inner">
+						<h2 class="p-index-price__title">Price</h2>
+						<table class="p-index-price__table">
+							<tr class="p-index-price__table-record">
+								<th class="p-index-price__table-title">row 1</th>
+								<td class="p-index-price__table-cost">Price ¥10,000</td>
+							</tr>
+							<tr class="p-index-price__table-record">
+								<th class="p-index-price__table-title">row 2</th>
+								<td class="p-index-price__table-cost">Price ¥10,000</td>
+							</tr>
+							<tr class="p-index-price__table-record">
+								<th class="p-index-price__table-title">row 3</th>
+								<td class="p-index-price__table-cost">Price ¥10,000</td>
+							</tr>
+						</table>
+						<p class="p-index-price__text">※ 上記料金はサンプルです。</p>
+					</div>
+				</section>
+				<!-- /.p-index-price -->
+
+				<section class="p-index-comments" id="comments">
+					<div class="p-index-comments__inner">
+						<div class="p-index-comments__box">
+							<div class="p-index-comments__message">
+								<h2 class="p-index-comments__title">Comments</h2>
+								<div class="p-index-comments__message-item">
+									<div class="p-index-comments__avatar-wrapper">
+										<img
+											src="./img/comments1.png"
+											alt="comments1"
+											class="p-index-comments__avatar"
+										/>
+									</div>
+									<p class="p-index-comments__message-text">
+										どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+									</p>
+								</div>
+								<div class="p-index-comments__message-item">
+									<div class="p-index-comments__avatar-wrapper">
+										<img
+											src="./img/comments2.png"
+											alt="comments2"
+											class="p-index-comments__avatar"
+										/>
+									</div>
+									<p class="p-index-comments__message-text">
+										どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+									</p>
+								</div>
+							</div>
+							<div class="p-index-comments__picture"></div>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-comments -->
+
+				<section class="p-index-faq" id="faq">
+					<div class="p-index-faq__inner">
+						<h2 class="p-index-faq__title">Q&A</h2>
+						<div class="p-index-faq__list">
+							<details open class="p-index-faq__item">
+								<summary class="p-index-faq__question">質問質問質問？</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+							<details open class="p-index-faq__item">
+								<summary class="p-index-faq__question">
+									質問質問質問？ <br />また、質問は質問質問？
+								</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+							<details class="p-index-faq__item">
+								<summary class="p-index-faq__question">質問質問質問？</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+							<details class="p-index-faq__item">
+								<summary class="p-index-faq__question">質問質問質問？</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+							<details class="p-index-faq__item">
+								<summary class="p-index-faq__question">質問質問質問？</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+							<details class="p-index-faq__item">
+								<summary class="p-index-faq__question">質問質問質問？</summary>
+								<p class="p-index-faq__answer">
+									回答回答回答回答回答回答回答回答回答回答回答
+								</p>
+							</details>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-faq -->
+
+				<section class="p-index-access" id="access">
+					<div class="p-index-access__inner">
+						<div class="p-index-access__content">
+							<h2 class="p-index-access__title">Access</h2>
+							<p class="p-index-access__address">
+								〒106-6126<br />東京都港区六本木 6丁目 10-1<br />六本木ヒルズ森タワー
+							</p>
+							<div class="p-index-access__map-wrapper">
+								<div class="p-index-access__map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.666261563564!2d139.72664407623174!3d35.66059337259391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b828453ffff%3A0xb8603beeb9b150d8!2z5YWt5pys5pyo44OS44Or44K6IOajruOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1686132566655!5m2!1sja!2sjp"
+										style="border: 0"
+										allowfullscreen=""
+										loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"
+									></iframe>
+								</div>
+							</div>
+							<div class="p-index-access__footer">
+								<a href="" class="p-index-access__link">Google Maps</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-access -->
+
+				<section class="p-index-contact" id="contact">
+					<div class="p-index-contact__inner">
+						<div class="p-index-contact__content">
+							<div class="p-index-contact__header">
+								<h2 class="p-index-contact__title">Contact Us</h2>
+								<p class="p-index-contact__text">
+									どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。
+								</p>
+							</div>
+							<form
+								action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeS9RkfAbIyLSguFgStsitjS2miZJcX93TY0GwobWhJx_J4Iw/formResponse"
+								class="p-index-contact__body"
+								id="js-form"
+							>
+								<dl class="p-index-contact__list">
+									<div class="p-index-contact__item">
+										<dt class="p-index-contact__item-title">
+											お問い合わせ種別
+										</dt>
+										<dd class="p-index-contact__item-input">
+											<div class="p-index-contact__item-select-wrapper">
+												<select
+													name="entry.181888189"
+													id="inquiry"
+													class="p-index-contact__item-select"
+												>
+													<option value="選択してください">
+														選択してください
+													</option>
+													<option value="選択してください1">
+														選択してください1
+													</option>
+													<option value="選択してください2">
+														選択してください2
+													</option>
+												</select>
+											</div>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<dt
+											class="p-index-contact__item-title p-index-contact__item-require"
+										>
+											氏名
+										</dt>
+										<dd class="p-index-contact__item-input">
+											<input
+												type="text"
+												placeholder="氏名"
+												name="entry.660034449"
+												id="name"
+												class="p-index-contact__item-input-text"
+											/>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<dt
+											class="p-index-contact__item-title p-index-contact__item-require"
+										>
+											フリガナ
+										</dt>
+										<dd class="p-index-contact__item-input">
+											<input
+												type="text"
+												placeholder="フリガナ"
+												name="entry.141600001"
+												id="furigana"
+												class="p-index-contact__item-input-text"
+											/>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<dt class="p-index-contact__item-title">メールアドレス</dt>
+										<dd class="p-index-contact__item-input">
+											<input
+												type="email"
+												name="emailAddress"
+												placeholder="sample@gmail.com"
+												class="p-index-contact__item-input-text"
+											/>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<dt class="p-index-contact__item-title">性別</dt>
+										<dd class="p-index-contact__item-input">
+											<label class="p-index-contact__radio-label">
+												<input
+													type="radio"
+													name="entry.986915255"
+													class="p-index-contact__item-input-radio"
+													value="男性"
+													checked
+												/>
+												<span class="p-index-contact__radio-span">男性</span>
+											</label>
+											<label class="p-index-contact__radio-label">
+												<input
+													type="radio"
+													name="entry.986915255"
+													class="p-index-contact__item-input-radio"
+													value="女性"
+												/>
+												<span class="p-index-contact__radio-span">女性</span>
+											</label>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<dt class="p-index-contact__item-title">メッセージ</dt>
+										<dd class="p-index-contact__item-input">
+											<textarea
+												name="entry.7315953"
+												class="p-index-contact__item-input-textarea"
+											></textarea>
+										</dd>
+									</div>
+									<div class="p-index-contact__item">
+										<label>
+											<input
+												type="checkbox"
+												name="entry.1503429858"
+												id="privacy"
+												class="p-index-contact__item-checkbox"
+												value="個人情報保護方針に同意する"
+												checked
+											/>
+											<span>個人情報保護方針に同意する</span>
+										</label>
+									</div>
+								</dl>
+								<div class="p-index-contact__submit">
+									<button
+										class="p-index-contact__cta-button"
+										id="js-submit"
+										disabled
+									>
+										送信する
+									</button>
+								</div>
+							</form>
+							<div id="js-success" class="p-index-contact__message">
+								<p>送信完了しました。ありがとうございました。</p>
+							</div>
+							<div id="js-error" class="p-index-contact__message-error">
+								<p>
+									送信に失敗しました。ページを更新して再度送信してください。
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.p-index-contact -->
+			</main>
+			<!-- /.l-main -->
+
+			<footer class="l-footer">
+				<div class="l-footer__inner">
+					<div class="l-footer__site-map">
+						<div class="l-footer__sns">
+							<a href="#" class="l-footer__sns-link" aria-label="Twitter">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="#" class="l-footer__sns-link" aria-label="Facebook">
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							</a>
+						</div>
+						<a href="#" class="l-footer__site-map-link">
+							<p class="l-footer__site-map-text">サイトマップ</p>
+						</a>
+						<a href="#" class="l-footer__site-map-link">
+							<p class="l-footer__site-map-text">個人情報保護方針</p>
+						</a>
+						<a href="#" class="l-footer__site-map-link">
+							<p class="l-footer__site-map-text">プライバシーポリシー</p>
+						</a>
+					</div>
+					<div class="l-footer__message">
+						<p class="l-footer__message-logo">Sample Corp.</p>
+						<p class="l-footer__message-text">
+							<small lang="en">© デイトラ Landing page Sample.</small>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /.l-footer -->
+		</div>
+
+		<div class="l-to-top">
+			<a href="#top" class="l-to-top-link">
+				<img src="/img/news-arrow.svg" alt="" />
+			</a>
+		</div>
+		<!-- /.l-to-top -->
+
+		<!-- Swiper.js -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
+			integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- Original JS -->
+		<script src="./js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+@use "../foundation/color" as c;
+@use "../foundation/mixin" as m;
+@use "../foundation/variable" as v;
+
+/*==============================================================================
+# footer
+==============================================================================*/
+.l-footer {
+	background: c.$c-black;
+	color: c.$text-base-rev;
+	padding-top: 56px;
+	padding-bottom: 60px;
+
+	&__inner {
+		max-width: 960px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 76px;
+		padding-right: 76px;
+
+		@include m.mq() {
+			max-width: 1280px;
+			padding-left: 160px;
+			padding-right: 160px;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__site-map {
+		@include m.mq() {
+			text-align: left;
+		}
+	}
+
+	&__sns {
+		display: flex;
+		justify-content: center;
+
+		@include m.mq() {
+			justify-content: flex-start;
+			margin-top: 2px;
+		}
+	}
+
+	&__sns-link {
+		display: block;
+		font-size: 4.2rem;
+		color: #b2b2b2;
+
+		& + & {
+			margin-left: 50px;
+
+			@include m.mq() {
+				margin-left: 30px;
+			}
+		}
+	}
+
+	&__site-map-link {
+		display: block;
+		font-size: 1.4rem;
+		font-weight: 500;
+		letter-spacing: 0.35px;
+		margin-top: 38px;
+
+		@include m.mq() {
+			font-size: 1.6rem;
+			letter-spacing: 0.4px;
+			margin-top: 37px;
+		}
+
+		& + & {
+			margin-top: 26px;
+
+			@include m.mq() {
+				margin-top: 24px;
+			}
+		}
+	}
+
+	&__site-map-text {
+	}
+
+	&__message {
+		margin-top: 44px;
+		font-family: v.$font-family-english;
+
+		@include m.mq() {
+			text-align: right;
+			margin-top: 10px;
+		}
+	}
+
+	&__message-logo {
+		font-size: 3.2rem;
+		font-weight: 700;
+		color: #e3e3e3;
+
+		@include m.mq() {
+			font-size: 4rem;
+		}
+	}
+
+	&__message-text {
+		margin-top: 17px;
+		opacity: v.$opacity-06;
+
+		@include m.mq() {
+			margin-top: 16px;
+		}
+
+		small {
+			font-size: 1.2rem;
+			letter-spacing: 0.3px;
+			font-family: v.$font-family-english;
+		}
+	}
+}

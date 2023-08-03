@@ -1,0 +1,193 @@
+@use "sass:math";
+@use "../foundation/mixin" as m;
+@use "../foundation/color" as c;
+@use "../foundation/variable" as v;
+
+/*==============================================================================
+# common
+==============================================================================*/
+%l-inner {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	@include m.mq() {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+/*==============================================================================
+# header
+==============================================================================*/
+.l-header {
+	height: 68px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: c.$c-gray;
+	transition: all 0.3s ease;
+	z-index: 10;
+
+	.is-drawer-open & {
+		right: 30rem;
+	}
+
+	@include m.mq() {
+		height: 83px;
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	&__inner {
+		@extend %l-inner;
+	}
+
+	&__logo {
+		font-size: 2.3rem;
+		font-weight: 700;
+		font-family: v.$font-family-english;
+		width: 160px;
+		height: 28px;
+		padding-top: 23px;
+		padding-bottom: 20px;
+
+		@include m.mq() {
+			display: none;
+		}
+	}
+
+	&__logo-link {
+	}
+
+	&__nav {
+		display: none;
+
+		@include m.mq() {
+			display: block;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__nav-item {
+		& + & {
+			margin-left: 40px;
+		}
+	}
+
+	&__nav-link {
+		display: block;
+		font-family: v.$font-family-english;
+		font-size: 1.6rem;
+		font-weight: 500;
+		letter-spacing: -0.4px;
+		padding: 33px 0;
+		position: relative;
+
+		&:hover {
+			&::after {
+				position: absolute;
+				display: block;
+				content: "";
+				border-bottom: 1px solid c.$c-black;
+				top: 50px;
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	&__hamburger {
+		position: fixed;
+		top: 0;
+		right: -30rem;
+		width: 30rem;
+		height: 100%;
+		background: c.$c-white;
+		z-index: 12;
+		transition: all 0.3s ease;
+
+		.is-drawer-open & {
+			right: 0;
+		}
+
+		@include m.mq() {
+			display: none;
+		}
+	}
+
+	&__hamburger-button {
+		position: fixed;
+		padding: 0;
+		border: none;
+		background: transparent;
+		margin: 24px 16px 0 0;
+		top: 0;
+		right: 0;
+		z-index: 13;
+		transition: all 0.3s ease;
+
+		.is-drawer-open & {
+			right: 30rem;
+		}
+
+		@include m.mq() {
+			display: none;
+		}
+	}
+
+	&__hamburger-icon {
+		background: transparent url(/img/sm/hamburger.svg) no-repeat center center /
+			contain;
+		width: 26px;
+		height: 20px;
+		display: block;
+
+		.is-drawer-open & {
+			background: transparent url(/img/sm/batsu.svg) no-repeat center center /
+				contain;
+			width: 21px;
+			height: 21px;
+		}
+	}
+
+	&__hamburger-nav {
+	}
+
+	&__hamburger-menu {
+		margin-top: 145px;
+	}
+
+	&__hamburger-item {
+	}
+
+	&__hamburger-link {
+		font-family: v.$font-family-english;
+		font-size: 1.8rem;
+		font-weight: 500;
+		display: block;
+		padding: 18px;
+		text-align: center;
+	}
+
+	&__hamburger-overlay {
+		transition: all 0.3s ease;
+
+		.is-drawer-open & {
+			background: c.$c-black;
+			opacity: 0.7;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 11;
+		}
+	}
+}

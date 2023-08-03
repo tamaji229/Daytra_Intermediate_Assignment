@@ -1,0 +1,27 @@
+{
+	"liveSassCompile.settings.generateMap": true, //MAPファイルの生成有無
+	"liveSassCompile.settings.formats": [
+		//Sassの出力内容の設定
+		{
+			"format": "expanded", //expanded、compressedのどれかを選ぶ
+			"extensionName": ".css", //style.cssとして出力
+			"savePath": "/css" //cssフォルダの中にstyle.cssを出力
+		}
+	],
+	"liveSassCompile.settings.autoprefix": [
+		//ベンダープレフィックスの指定
+		"> 0.3%",
+		"last 2 versions",
+		"not dead"
+	],
+	"liveSassCompile.settings.watchOnLaunch": true, //VS Code起動時に監視開始
+	"liveServer.settings.port": 5501, //LiveServerのポート番号を5501にする
+	"editor.fontFamily": "\"Source Han Code JP\", monospace",
+	"files.eol": "\n", //改行コードをLFにする
+	"editor.insertSpaces": false, //tabキーを押したときにスペースにしない
+	"editor.renderWhitespace": "all", //空白文字をわかりやすく
+	"editor.tabSize": 2, //タブのサイズを空白文字2つ分にする
+	"editor.formatOnSave": true, //セーブ時にフォーマットする
+	"prettier.useTabs": true, //Prettierでタブを使用する
+	"editor.defaultFormatter": "esbenp.prettier-vscode" //フォーマッターをPrettierにする
+}
