@@ -53,7 +53,7 @@
 .p-index-hero {
 	width: 100%;
 	height: 667px;
-	background: transparent url(/img/mv.png) no-repeat left -210px top 0px / cover;
+	background: transparent url(../img/mv.png) no-repeat left -210px top 0px / cover;
 
 	@include m.mq(tab) {
 		margin: 0 auto;
@@ -61,7 +61,7 @@
 
 	@include m.mq() {
 		height: 648px;
-		background: transparent url(/img/mv.png) no-repeat center center / cover;
+		background: transparent url(../img/mv.png) no-repeat center center / cover;
 	}
 
 	&__inner {
@@ -227,7 +227,7 @@
 			position: absolute;
 			width: 22px;
 			height: 22px;
-			background: transparent url(/img/news-arrow.svg) no-repeat center center /
+			background: transparent url(../img/news-arrow.svg) no-repeat center center /
 				contain;
 			right: 10px;
 			top: 50%;
@@ -787,7 +787,7 @@
 
 		@include m.mq() {
 			display: block;
-			background: transparent url(/img/comments3.png) no-repeat center center /
+			background: transparent url(../img/comments3.png) no-repeat center center /
 				cover;
 			flex: 1 1 45.5%;
 			margin-top: 80px;
@@ -800,7 +800,7 @@
 /* faq
 -------------------------------------------------------------------------*/
 .p-index-faq {
-	background: transparent url(/img/qa-bg.png) no-repeat top center / cover;
+	background: transparent url(../img/qa-bg.png) no-repeat top center / cover;
 	margin-top: 60px;
 	padding: 44px 0 61px;
 
@@ -941,13 +941,13 @@
 			width: 17px;
 			height: 17px;
 			right: 0;
-			background: transparent url(/img/plus.svg) no-repeat center center /
+			background: transparent url(../img/plus.svg) no-repeat center center /
 				contain;
 			transition: all v.$anime-transition;
 		}
 
 		.p-index-faq__item[open] &::after {
-			background: transparent url(/img/minus.svg) no-repeat center center /
+			background: transparent url(../img/minus.svg) no-repeat center center /
 				contain;
 		}
 	}
@@ -1079,7 +1079,7 @@
 -------------------------------------------------------------------------*/
 .p-index-contact {
 	padding: 39px 0 40px;
-	background: transparent url(/img/contact-bg.png) no-repeat center center /
+	background: transparent url(../img/contact-bg.png) no-repeat center center /
 		cover;
 
 	@include m.mq() {
@@ -1098,14 +1098,14 @@
 	}
 
 	&__header {
-		background: transparent url(/img/sm/contact1.png) no-repeat center center /
+		background: transparent url(../img/sm/contact1.png) no-repeat center center /
 			cover;
 		color: c.$text-base-rev;
 		padding: 45px 16px 37px;
 		border-radius: 12px 12px 0 0;
 
 		@include m.mq() {
-			background: transparent url(/img/contact1.png) no-repeat center center /
+			background: transparent url(../img/contact1.png) no-repeat center center /
 				cover;
 			padding: 64px 16px 55px;
 		}
@@ -1257,7 +1257,7 @@
 			position: absolute;
 			width: 12px;
 			height: 12px;
-			background: transparent url(/img/news-arrow.svg) no-repeat center center /
+			background: transparent url(../img/news-arrow.svg) no-repeat center center /
 				contain;
 			top: 12px;
 			right: 15px;

@@ -143,14 +143,14 @@
 	}
 
 	&__hamburger-icon {
-		background: transparent url(/img/sm/hamburger.svg) no-repeat center center /
+		background: transparent url(../img/sm/hamburger.svg) no-repeat center center /
 			contain;
 		width: 26px;
 		height: 20px;
 		display: block;
 
 		.is-drawer-open & {
-			background: transparent url(/img/sm/batsu.svg) no-repeat center center /
+			background: transparent url(../img/sm/batsu.svg) no-repeat center center /
 				contain;
 			width: 21px;
 			height: 21px;

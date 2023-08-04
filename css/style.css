@@ -237,13 +237,13 @@ a:hover {
   }
 }
 .l-header__hamburger-icon {
-  background: transparent url(/img/sm/hamburger.svg) no-repeat center center/contain;
+  background: transparent url(../img/sm/hamburger.svg) no-repeat center center/contain;
   width: 26px;
   height: 20px;
   display: block;
 }
 .is-drawer-open .l-header__hamburger-icon {
-  background: transparent url(/img/sm/batsu.svg) no-repeat center center/contain;
+  background: transparent url(../img/sm/batsu.svg) no-repeat center center/contain;
   width: 21px;
   height: 21px;
 }
@@ -504,7 +504,7 @@ a:hover {
 .p-index-hero {
   width: 100%;
   height: 667px;
-  background: transparent url(/img/mv.png) no-repeat left -210px top 0px/cover;
+  background: transparent url(../img/mv.png) no-repeat left -210px top 0px/cover;
 }
 @media screen and (min-width: 768px) {
   .p-index-hero {
@@ -514,7 +514,7 @@ a:hover {
 @media screen and (min-width: 1280px) {
   .p-index-hero {
     height: 648px;
-    background: transparent url(/img/mv.png) no-repeat center center/cover;
+    background: transparent url(../img/mv.png) no-repeat center center/cover;
   }
 }
 .p-index-hero__message {
@@ -660,7 +660,7 @@ a:hover {
   position: absolute;
   width: 22px;
   height: 22px;
-  background: transparent url(/img/news-arrow.svg) no-repeat center center/contain;
+  background: transparent url(../img/news-arrow.svg) no-repeat center center/contain;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
@@ -1178,7 +1178,7 @@ a:hover {
 @media screen and (min-width: 1280px) {
   .p-index-comments__picture {
     display: block;
-    background: transparent url(/img/comments3.png) no-repeat center center/cover;
+    background: transparent url(../img/comments3.png) no-repeat center center/cover;
     flex: 1 1 45.5%;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -1189,7 +1189,7 @@ a:hover {
 /* faq
 -------------------------------------------------------------------------*/
 .p-index-faq {
-  background: transparent url(/img/qa-bg.png) no-repeat top center/cover;
+  background: transparent url(../img/qa-bg.png) no-repeat top center/cover;
   margin-top: 60px;
   padding: 44px 0 61px;
 }
@@ -1309,11 +1309,11 @@ a:hover {
   width: 17px;
   height: 17px;
   right: 0;
-  background: transparent url(/img/plus.svg) no-repeat center center/contain;
+  background: transparent url(../img/plus.svg) no-repeat center center/contain;
   transition: all 0.3s;
 }
 .p-index-faq__item[open] .p-index-faq__question::after {
-  background: transparent url(/img/minus.svg) no-repeat center center/contain;
+  background: transparent url(../img/minus.svg) no-repeat center center/contain;
 }
 .p-index-faq__answer {
   font-size: 1.4rem;
@@ -1467,7 +1467,7 @@ a:hover {
 -------------------------------------------------------------------------*/
 .p-index-contact {
   padding: 39px 0 40px;
-  background: transparent url(/img/contact-bg.png) no-repeat center center/cover;
+  background: transparent url(../img/contact-bg.png) no-repeat center center/cover;
 }
 @media screen and (min-width: 1280px) {
   .p-index-contact {
@@ -1480,14 +1480,14 @@ a:hover {
   }
 }
 .p-index-contact__header {
-  background: transparent url(/img/sm/contact1.png) no-repeat center center/cover;
+  background: transparent url(../img/sm/contact1.png) no-repeat center center/cover;
   color: #ffffff;
   padding: 45px 16px 37px;
   border-radius: 12px 12px 0 0;
 }
 @media screen and (min-width: 1280px) {
   .p-index-contact__header {
-    background: transparent url(/img/contact1.png) no-repeat center center/cover;
+    background: transparent url(../img/contact1.png) no-repeat center center/cover;
     padding: 64px 16px 55px;
   }
 }
@@ -1623,7 +1623,7 @@ a:hover {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: transparent url(/img/news-arrow.svg) no-repeat center center/contain;
+  background: transparent url(../img/news-arrow.svg) no-repeat center center/contain;
   top: 12px;
   right: 15px;
   pointer-events: none;
