@@ -1178,7 +1178,7 @@ a:hover {
 @media screen and (min-width: 1280px) {
   .p-index-comments__picture {
     display: block;
-    background: transparent url(/img/comments3.png) no-repeat center center/cover;
+    background: transparent url(../img/comments3.png) no-repeat center center/cover;
     flex: 1 1 45.5%;
     margin-top: 80px;
     margin-bottom: 80px;
